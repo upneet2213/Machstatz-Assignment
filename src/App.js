@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import React, { useState, useEffect } from "react";
+import { Display } from "./Pages/Display";
+import { Form } from "./Pages/Form";
 function App() {
+  const [list, setList] = useState([]);
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
+  const fetchData = async () => {
+    const response = await fetch(
+      "http://3.6.93.159:7883/machstatz/get_all_users"
+    );
+    const data = await response.json();
+    setList(data);
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
+  const openForm = () => {
+    setIsFormOpen(true);
+  };
+  const closeForm = () => {
+    setIsFormOpen(false);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <button className="main-btn add" onClick={openForm}>
+          <h4>Add User</h4>
+        </button>
+        <div className="display">
+          {list.map((item) => {
+            return (
+              <Display item={item} key={item._id.$oid} fetchData={fetchData} />
+            );
+          })}
+        </div>
+        {isFormOpen ? (
+          <Form closeForm={closeForm} list={list} fetchData={fetchData} />
+        ) : null}
+      </div>
     </div>
   );
 }
