@@ -9,7 +9,7 @@ export const Form = ({ list, closeForm, fetchData }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     let flag = 0;
     const myUser = {
       email,
