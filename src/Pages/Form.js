@@ -14,6 +14,7 @@ export const Form = ({ list, closeForm, fetchData }) => {
     const myUser = {
       email,
       fist_name: firstName,
+      first_name: firstName,
       last_name: lastName,
       pwd: password,
       username: userName,
