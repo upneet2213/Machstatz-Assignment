@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Machstatz-Assignment/static/css/main.40177d4e.chunk.css",
+    "main.css": "/Machstatz-Assignment/static/css/main.fd3e2eeb.chunk.css",
     "main.js": "/Machstatz-Assignment/static/js/main.e17a3498.chunk.js",
     "main.js.map": "/Machstatz-Assignment/static/js/main.e17a3498.chunk.js.map",
     "runtime-main.js": "/Machstatz-Assignment/static/js/runtime-main.7084707b.js",
@@ -8,13 +8,13 @@
     "static/js/2.fb6e62e9.chunk.js": "/Machstatz-Assignment/static/js/2.fb6e62e9.chunk.js",
     "static/js/2.fb6e62e9.chunk.js.map": "/Machstatz-Assignment/static/js/2.fb6e62e9.chunk.js.map",
     "index.html": "/Machstatz-Assignment/index.html",
-    "static/css/main.40177d4e.chunk.css.map": "/Machstatz-Assignment/static/css/main.40177d4e.chunk.css.map",
+    "static/css/main.fd3e2eeb.chunk.css.map": "/Machstatz-Assignment/static/css/main.fd3e2eeb.chunk.css.map",
     "static/js/2.fb6e62e9.chunk.js.LICENSE.txt": "/Machstatz-Assignment/static/js/2.fb6e62e9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7084707b.js",
     "static/js/2.fb6e62e9.chunk.js",
-    "static/css/main.40177d4e.chunk.css",
+    "static/css/main.fd3e2eeb.chunk.css",
     "static/js/main.e17a3498.chunk.js"
   ]
 }
